@@ -1,0 +1,27 @@
+// public class
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+/*
+* use ---> @include transItion(0.2s);
+*/
+@mixin transItion($time) {
+  transition: all $time linear;
+  -o-transition: all $time linear;
+  -moz-transition: all $time linear;
+  -webkit-transition: all $time linear;
+}
+
+@mixin transForm($attribute) {
+  transform: $attribute;
+  -o-transform: $attribute;
+  -ms-transform: $attribute;
+  -moz-transform: $attribute;
+  -webkit-transform: $attribute;
+}
